@@ -5,39 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project - Fintech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="contentsHeader">
-            <div class="logoAndName">
+    <div class="painelFinanceiro">
+        <header class="cabecalho">
+            <div class="areaLogo">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <h1>Controle Financeiro</h1>
             </div>
-            <div class="notificationsAndUser">
+            <div class="iconesCabecalho">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-user"></i>
             </div>
-        </div>
-    </div>
-    <section class="content">
-        <div class="titlePage">
+        </header>
+        <main class="conteudo">
 
-        </div>
-        <div class="contentCards">
-            <span class="card"></span>
-            <span class="card"></span>
-            <span class="card"></span>
-        </div>
-        <div class="contentList">
-            <div class="titleAndButtons">
-                <h1>Transações do mês</h1>
-                <button>Registrar Receita</button>
-                <button>Registrar Gasto</button>
+            <div class="cabecalhoPagina">
+                <div>
+                    <h2>Dashboard Financeiro</h2>
+                    <span>Abril de 2026</span>
+                </div>
+                <button class="botaoInvestimentos">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Investimentos
+                </button>
             </div>
-            <ul style="list-style: none;">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-        </div>
-    </section>
+
+            <section class="listaCartoes">
+                <div class="cartao">
+                    <div class="icone success">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <span>Receita total</span>
+                    <h3>R$ 5.000,00</h3>
+                </div>
+                <div class="cartao">
+                    <div class="icone danger">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                    </div>
+                    <span>Gastos</span>
+                    <h3>R$ 1.950,00</h3>
+                </div>
+                <div class="cartao">
+                    <div class="icone primary">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <span>Saldo restante</span>
+                    <h3>R$ 3.050,00</h3>
+                </div>
+            </section>
+
+            <section class="transacoes">
+                <div class="cabecalhoTransacoes">
+                    <h3>Transações do mês</h3>
+                    <div class="acoes">
+                        <button class="btn-success">
+                            Registrar receita
+                        </button>
+                        <button class="btn-danger">
+                            Registrar gasto
+                        </button>
+                    </div>
+                </div>
+
+                <div class="transacao">
+                    <div class="informacoesTransacao">
+                        <div class="iconeTransacao danger">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h4>Supermercado</h4>
+                            <div class="meta">
+                                <span class="bank santander">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Santander
+                                </span>
+                                <span>Alimentação</span>
+                                <span>28-04-2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valor negativo">
+                        -R$ 250,00
+                    </div>
+                </div>
+                <div class="transacao">
+                    <div class="informacoesTransacao">
+                        <div class="iconeTransacao danger">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h4>Aluguel</h4>
+
+                            <div class="meta">
+                                <span class="bank nubank">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Nubank
+                                </span>
+                                <span>Moradia</span>
+                                <span>26-04-2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valor negativo">
+                        -R$ 1.500,00
+                    </div>
+                </div>
+                <div class="transacao">
+                    <div class="informacoesTransacao">
+                        <div class="iconeTransacao success">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h4>Salário</h4>
+                            <div class="meta">
+                                <span class="bank santander">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Santander
+                                </span>
+                                <span>Receita</span>
+                                <span>25-04-2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valor positivo">R$ 5.000,00</div>
+                </div>
+                <div class="transacao">
+                    <div class="informacoesTransacao">
+                        <div class="iconeTransacao danger">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h4>Combustível</h4>
+                            <div class="meta">
+                                <span class="bank bradesco">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Bradesco
+                                </span>
+                                <span>Transporte</span>
+                                <span>24-04-2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valor negativo">-R$ 180,00</div>
+                </div>
+                <div class="transacao">
+                    <div class="informacoesTransacao">
+                        <div class="iconeTransacao danger">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div class="detalhes">
+                            <h4>Moradia</h4>
+                            <div class="meta">
+                                <span class="bank santander">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Santander
+                                </span>
+                                <span>Alimentação</span>
+                                <span>21-04-2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valor negativo">-R$ 20,00</div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
